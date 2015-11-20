@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @due2day_list.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @due2day_list.description %>
+</p>
+
+<div id="due2day_items_wrapper">
+  <%= render @due2day_list.due2day_items %>
+  <div id="form">
+    <%= render "due2day_items/form" %>
+  </div>
+</div>
+
+
+<%= link_to 'Edit', edit_due2day_list_path(@due2day_list) %> |
+<%= link_to 'Back', due2day_lists_path %>

@@ -1,0 +1,4 @@
+<%= form_for([@due2day_list, @due2day_list.due2day_items.build]) do |f| %>
+  <%= f.text_field :content, placeholder: "New Due 2 Day" %>
+  <%= f.submit %>
+<% end %>

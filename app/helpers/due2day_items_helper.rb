@@ -1,0 +1,2 @@
+module Due2dayItemsHelper
+end

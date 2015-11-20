@@ -1,0 +1,3 @@
+<p><%= due2day_item.content %></p>
+<%= link_to "Delete", due2day_list_due2day_item_path(@due2day_list, due2day_item.id), method: :delete, data: { confirm: "Click Ok to Delete" } %>
+<!-- Error due to missing comma after 'delete' and non-plural item on due2day_item.id -->

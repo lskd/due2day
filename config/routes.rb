@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :due2day_lists  do
+    resources :due2day_items
+  end
 
-  
-  # root 'welcome#index'
+  root 'due2day_lists#index'
 end

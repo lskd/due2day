@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Due2day Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @due2day_lists.each do |due2day_list| %>
+      <tr>
+        <td><%= due2day_list.title %></td>
+        <td><%= due2day_list.description %></td>
+        <td><%= link_to 'Show', due2day_list %></td>
+        <td><%= link_to 'Edit', edit_due2day_list_path(due2day_list) %></td>
+        <td><%= link_to 'Destroy', due2day_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Due2day list', new_due2day_list_path %>
