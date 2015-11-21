@@ -28,7 +28,7 @@ class Due2dayListsController < ApplicationController
 
     respond_to do |format|
       if @due2day_list.save
-        format.html { redirect_to @due2day_list, notice: 'Due2day list was successfully created.' }
+        format.html { redirect_to @due2day_list, notice: 'Due 2 day list created.' }
         format.json { render :show, status: :created, location: @due2day_list }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class Due2dayListsController < ApplicationController
   def update
     respond_to do |format|
       if @due2day_list.update(due2day_list_params)
-        format.html { redirect_to @due2day_list, notice: 'Due2day list was successfully updated.' }
+        format.html { redirect_to @due2day_list, notice: 'Due 2 day list updated.' }
         format.json { render :show, status: :ok, location: @due2day_list }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class Due2dayListsController < ApplicationController
   def destroy
     @due2day_list.destroy
     respond_to do |format|
-      format.html { redirect_to due2day_lists_url, notice: 'Due2day list was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'Due 2 day list destroyed.' }
       format.json { head :no_content }
     end
   end

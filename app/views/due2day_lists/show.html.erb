@@ -1,14 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @due2day_list.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @due2day_list.description %>
-</p>
+<h2 class="due2day_list_title"><%= @due2day_list.title %></h2>
+<p class="due2day_list_sub_title"><%= @due2day_list.description %></p>
 
 <div id="due2day_items_wrapper">
   <%= render @due2day_list.due2day_items %>
@@ -17,6 +10,8 @@
   </div>
 </div>
 
-
-<%= link_to 'Edit', edit_due2day_list_path(@due2day_list) %> |
-<%= link_to 'Back', due2day_lists_path %>
+<div class="links">
+  <%= link_to 'Back', due2day_lists_path %> |
+  <%= link_to 'Edit', edit_due2day_list_path(@due2day_list) %> |
+  <%= link_to 'Delete', due2day_list_path(@due2day_list), method: :delete, data: {confirm: "Ok to Delete"} %>
+</div>
