@@ -1,6 +1,12 @@
 class Due2dayListsController < ApplicationController
   before_action :set_due2day_list, only: [:show, :edit, :update, :destroy]
 
+  # Squashing InvalidForeignKey Error due to list deletes with items inside
+  # rescue_from 'ActiveRecord::InvalidForeignKey' do
+  # flash[:notice] = "Remove Items before Due List will delete."
+  # redirect_to @due2day_list
+  # end
+
   # GET /due2day_lists
   # GET /due2day_lists.json
   def index
@@ -54,10 +60,15 @@ class Due2dayListsController < ApplicationController
   # DELETE /due2day_lists/1
   # DELETE /due2day_lists/1.json
   def destroy
+    if @due2day_list.due2day_items.any?
+      flash[:notice] = "[ •  Remove Items from Due List First • ]"
+      redirect_to @due2day_list
+    else
     @due2day_list.destroy
-    respond_to do |format|
-      format.html { redirect_to root_url, notice: 'Due 2 day list destroyed.' }
-      format.json { head :no_content }
+      respond_to do |format|
+        format.html { redirect_to root_url, notice: 'Due 2 day list destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 

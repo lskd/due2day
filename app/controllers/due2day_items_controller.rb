@@ -1,6 +1,8 @@
 class Due2dayItemsController < ApplicationController
   before_action :set_due2day_list
   before_action :set_due2day_item, except: [:create]
+
+  
 def create
   # @due2day_list = Due2dayList.find(params[:due2day_list_id])
   @due2day_item = @due2day_list.due2day_items.create(due2day_item_params)

@@ -1,7 +1,7 @@
 <%= form_for(@due2day_list) do |f| %>
   <% if @due2day_list.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@due2day_list.errors.count, "error") %> prohibited this due2day_list from being saved:</h2>
+      <h2><%= pluralize(@due2day_list.errors.count, "error") %> prohibited Due 2 Day List:</h2>
 
       <ul>
       <% @due2day_list.errors.full_messages.each do |message| %>
@@ -13,13 +13,13 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :required => true %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Due 2 Day' %>
   </div>
 <% end %>
