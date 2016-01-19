@@ -3,8 +3,8 @@
 * aka todo app
 
 *due2day* 
-* deployed on heroku
-* uses nested resources
+* deployed on heroku with their 12factor gem
+* figaro gem for ENV
 * postgress db for data
 
 
