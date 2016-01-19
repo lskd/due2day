@@ -1,6 +1,6 @@
 == due2day
 
-* aka todo app
+* aka a todo list app
 
 *due2day* 
 * deployed on heroku via 12factor gem
