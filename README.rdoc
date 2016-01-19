@@ -3,9 +3,11 @@
 * aka todo app
 
 *due2day* 
-* deployed on heroku with their 12factor gem
-* figaro gem for ENV
+* deployed on heroku via 12factor gem
+* ENV configuration via figaro gem
 * postgress db for data
 
-
 _TODO_ : transition to Puma server
+
+This app is based on [Mckenzie Child's](http://mackenziechild.me/12-in-12/6/) todo list app.
+Choosen for continued knowledge in the use of nested resources, form use and frontend CSS
