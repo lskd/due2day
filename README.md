@@ -1,8 +1,8 @@
 
 * What's due 2 day ?
 
-*due2day*
-* [due2day](http://due2day.herokuapp.com/) on Heroku
+due2day is a todo list app
+* check out [due2day](http://due2day.herokuapp.com/) on Heroku
 * ENV configuration via figaro gem
 * postgress db for data
 
