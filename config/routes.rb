@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :due2day_lists  do
-    resources :due2day_items do
+  resources :lists  do
+    resources :items do
       member do
         patch :complete
       end
     end
   end
 
-  root 'due2day_lists#index'
+  root 'lists#index'
 end

@@ -1,10 +1,10 @@
-<%= form_for(@due2day_list) do |f| %>
-  <% if @due2day_list.errors.any? %>
+<%= form_for(@list) do |f| %>
+  <% if @list.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@due2day_list.errors.count, "error") %> prohibited Due 2 Day List:</h2>
+      <h2><%= pluralize(@list.errors.count, "error") %> prohibited Due 2 Day List:</h2>
 
       <ul>
-      <% @due2day_list.errors.full_messages.each do |message| %>
+      <% @list.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
