@@ -1,6 +1,5 @@
-== due2day
 
-* aka a todo list app
+* What's due 2 day ?
 
 *due2day*
 * [due2day](http://due2day.herokuapp.com/) on Heroku
