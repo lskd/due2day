@@ -3,10 +3,10 @@
 <h2 class="list_title"><%= @list.title %></h2>
 <p class="list_sub_title"><%= @list.description %></p>
 
-<div id="due2day_items_wrapper">
-  <%= render @list.due2day_items %>
+<div id="items_wrapper">
+  <%= render @list.items %>
   <div id="form">
-    <%= render "due2day_items/form" %>
+    <%= render "items/form" %>
   </div>
 </div>
 

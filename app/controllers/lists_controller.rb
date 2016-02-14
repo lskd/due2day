@@ -10,7 +10,7 @@ class ListsController < ApplicationController
   # GET /lists
   # GET /lists.json
   def index
-    @lists = Due2dayList.all
+    @lists = List.all
   end
 
   # GET /lists/1
@@ -20,7 +20,7 @@ class ListsController < ApplicationController
 
   # GET /lists/new
   def new
-    @list = Due2dayList.new
+    @list = List.new
   end
 
   # GET /lists/1/edit
@@ -30,7 +30,7 @@ class ListsController < ApplicationController
   # POST /lists
   # POST /lists.json
   def create
-    @list = Due2dayList.new(list_params)
+    @list = List.new(list_params)
 
     respond_to do |format|
       if @list.save
@@ -60,7 +60,7 @@ class ListsController < ApplicationController
   # DELETE /lists/1
   # DELETE /lists/1.json
   def destroy
-    if @list.due2day_items.any?
+    if @list.items.any?
       flash[:notice] = "[ •  Remove Items from Due List First • ]"
       redirect_to @list
     else
@@ -75,7 +75,7 @@ class ListsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_list
-      @list = Due2dayList.find(params[:id])
+      @list = List.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

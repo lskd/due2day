@@ -29,7 +29,7 @@ end
   private
 
   def set_list
-    @list = Due2dayList.find(params[:list_id])
+    @list = List.find(params[:list_id])
   end
 
   def set_item

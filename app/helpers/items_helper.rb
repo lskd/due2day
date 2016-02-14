@@ -1,2 +1,2 @@
-module Due2dayItemsHelper
+module ItemsHelper
 end

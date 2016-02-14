@@ -1,2 +1,2 @@
-module Due2dayListsHelper
+module ListsHelper
 end
