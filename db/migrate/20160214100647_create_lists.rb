@@ -1,6 +1,6 @@
-class CreateDue2dayLists < ActiveRecord::Migration
+class CreateLists < ActiveRecord::Migration
   def change
-    create_table :due2day_lists do |t|
+    create_table :lists do |t|
       t.string :title
       t.text :description
 

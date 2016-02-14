@@ -48,6 +48,9 @@ group :development, :test do
   # figaro
   gem 'figaro'
 
+  # better errors : https://github.com/charliesome/better_errors
+  gem 'better_errors'
+
   # heroku
   gem 'rails_12factor', group: :production
 end

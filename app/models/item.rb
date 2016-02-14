@@ -1,6 +1,5 @@
-class Due2dayItem < ActiveRecord::Base
-  belongs_to :due2day_list
-
+class Item < ActiveRecord::Base
+  belongs_to :list
   validates :content, :presence => true
 
   def completed?
