@@ -4,7 +4,6 @@ class ItemsController < ApplicationController
 
 def create
   @item = @list.items.create(item_params)
-
   redirect_to @list
 end
 
