@@ -10,6 +10,7 @@ due2day is a todo list app
 _TODO_ :
 * transition to Puma server
 * incorporate soft deletes & undo options
+
 ___
 
 This project is based on [Mckenzie Child's](http://mackenziechild.me/12-in-12/6/) todo list app.
