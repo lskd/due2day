@@ -2,16 +2,13 @@ class ItemsController < ApplicationController
   before_action :set_list
   before_action :set_item, except: [:create]
 
-
 def create
-  # @list = List.find(params[:list_id])
   @item = @list.items.create(item_params)
 
   redirect_to @list
 end
 
 def destroy
-  # @item = @list.items.find(params[:id]) #before action set
   if @item.destroy
     flash[:success] = "Due list item deleted."
   else

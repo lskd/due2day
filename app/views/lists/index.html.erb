@@ -1,9 +1,6 @@
 
 <% @lists.each do |list| %>
   <div class="index_row clearfix">
-    <%# Note on list path error caused in below link_to list vs lists #%>
-    <%# _path nor _url in use, and continued non- :id pass with lists  #%>
-    <%# changed lists ~> list to establish correct route passing :id  #%>
     <h2 class="list_title"><%= link_to list.title, list %></h2>
     <p class="list_sub_title"><%= list.description %></p>
   </div>

@@ -1,13 +1,16 @@
 
-* What's due 2 day ?
+What's due 2 day ?
+___
 
 due2day is a todo list app
 * check out [due2day](http://due2day.herokuapp.com/) on Heroku
 * ENV configuration via figaro gem
-* postgress db for data
+* postgres db for data
 
-_TODO_ : transition to Puma server
+_TODO_ :
+* transition to Puma server
+* incorporate soft deletes & undo options
+___
 
-
-Based on [Mckenzie Child's](http://mackenziechild.me/12-in-12/6/) todo list app.
-* nested resources, form, and CSS worth checking out
+This project is based on [Mckenzie Child's](http://mackenziechild.me/12-in-12/6/) todo list app.
+* an excellent walk thru nested resources, forms, and CSS
