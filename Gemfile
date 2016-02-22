@@ -13,3 +13,5 @@ group :development, :test do
   #gem 'spring'
   gem 'better_errors'
 end
+
+ruby "2.2.1p85"
