@@ -15,7 +15,7 @@ cd due2day
 rake bundle install
 rake db:create rake db:migrate
 rails s
-within a firefox or chrome browser, goto localhost:3000
+point your firefox or chrome browser to localhost:3000
 ```
 This will install locally.
 To install on [heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4) follow [these guidelines](https://devcenter.heroku.com/articles/getting-started-with-rails4)
