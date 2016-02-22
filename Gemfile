@@ -14,4 +14,4 @@ group :development, :test do
   gem 'better_errors'
 end
 
-ruby '2.2.4'
+# ruby '2.2.4'
